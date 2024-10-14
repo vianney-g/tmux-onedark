@@ -3,12 +3,12 @@ whiskers:
   version: "2.1.1"
   matrix:
     - flavor
-  filename: "themes/catppuccin_{{flavor.identifier}}_tmux.conf"
+  filename: "themes/onedark_{{flavor.identifier}}_tmux.conf"
 ---
 {%- set palette = flavor.colors -%}
 # vim:set ft=tmux:
 
-# --> Catppuccin ({{ flavor.identifier | capitalize }})
+# --> onedark ({{ flavor.identifier | capitalize }})
 set -ogq @thm_bg "#{{ palette.base.hex | lower }}"
 set -ogq @thm_fg "#{{ palette.text.hex | lower }}"
 
